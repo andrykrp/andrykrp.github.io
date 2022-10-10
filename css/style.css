@@ -199,6 +199,10 @@ ul, ol {
     margin-top: 15px;
 }
 
+.info-doc span {
+    font-weight: bold;
+}
+
 .text-center .title:after {
     margin: 20px auto 0px;
 }
