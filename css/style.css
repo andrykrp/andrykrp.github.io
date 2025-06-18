@@ -1669,6 +1669,10 @@ header {
     margin-bottom: 20px;
 }
 
+.footer-follow p {    
+    margin-bottom: 0!important;
+}
+
 .footer-follow li {
     display: inline-block;
     margin-right: 10px;
