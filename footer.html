@@ -1,24 +1,44 @@
 <!-- Modern Footer -->
-<footer class="modern-footer">
+<footer class="modern-footer" itemscope itemtype="https://schema.org/Organization">
     <div class="footer-content">
         <div class="footer-section">
             <h4>О компании</h4>
-            <p>Октокод — инженерная команда полного цикла.</p>
+            <p itemprop="description">Октокод — инженерная команда полного цикла.</p>
             <p>Мы проектируем, разрабатываем и сопровождаем веб- и мобильные продукты.</p>
+            <meta itemprop="name" content="ООО «ОКТОКОД»">
+            <meta itemprop="legalName" content="Общество с ограниченной ответственностью «ОКТОКОД»">
+            <meta itemprop="url" content="https://octocode.tech/">
+            <meta itemprop="logo" content="https://octocode.tech/img/octocode.svg">
+            <meta itemprop="taxID" content="5638080239">
+            <meta itemprop="vatID" content="563801001">
         </div>
         
         <div class="footer-section">
             <h4>Контакты</h4>
             <p>
-                <a href="tel:+79128412297" style="color: var(--text-primary); font-weight: 600;">
+                <a href="tel:+79128412297" style="color: var(--text-primary); font-weight: 600;" itemprop="telephone">
                     📞 +7 (912) 841 22 97
                 </a>
             </p>
             <p>
-                <a href="mailto:info@octocode.tech" style="color: var(--text-primary); font-weight: 600;">
+                <a href="mailto:info@octocode.tech" style="color: var(--text-primary); font-weight: 600;" itemprop="email">
                     ✉️ info@octocode.tech
                 </a>
             </p>
+            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" style="display: none;">
+                <meta itemprop="streetAddress" content="ул. Парковая 13 п. 23">
+                <meta itemprop="addressLocality" content="п. Пригородный">
+                <meta itemprop="addressRegion" content="Оренбургская область">
+                <meta itemprop="postalCode" content="460507">
+                <meta itemprop="addressCountry" content="RU">
+            </div>
+            <div itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint" style="display: none;">
+                <meta itemprop="telephone" content="+7-912-841-22-97">
+                <meta itemprop="contactType" content="sales">
+                <meta itemprop="email" content="info@octocode.tech">
+                <meta itemprop="areaServed" content="RU">
+                <meta itemprop="availableLanguage" content="Russian">
+            </div>
         </div>
         
     </div>

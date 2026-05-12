@@ -1,0 +1,49 @@
+/* TEAM */
+  Founder: Андрей Кропачев
+  Contact: info@octocode.tech
+  Twitter: @octocode_tech
+  Location: Екатеринбург, Россия
+
+/* SITE */
+  Last update: 2026/05/12
+  Language: Russian
+  Doctype: HTML5
+  Standards: HTML5, CSS3, JavaScript ES6+
+  Components: Modern UI, Responsive Design
+  IDE: VS Code
+
+/* TECHNOLOGIES */
+  Backend: Java, Spring Boot, Python, FastAPI
+  Frontend: React, TypeScript, Vue.js, Angular
+  Mobile: React Native
+  Databases: PostgreSQL, MySQL, MongoDB, Redis
+  DevOps: Docker, Kubernetes, Jenkins, GitLab CI
+  Testing: JUnit, PyTest, Selenium, Cypress
+
+/* SEO */
+  Optimized for: Yandex, Google
+  Verification: 
+    - Yandex: 54f71cd91c04ab33
+    - Google: _7cdRKdZZb2JmuVBUPIe12cVzk5RafiZOhsLwMnKyD4
+  Sitemap: https://octocode.tech/sitemap.xml
+  Robots: https://octocode.tech/robots.txt
+
+/* COMPANY */
+  Name: ООО «ОКТОКОД»
+  INN: 5638080239
+  OGRN: 1225600009304
+  Founded: 2011
+  Experience: 15+ years
+  Team size: 30+ specialists
+  Services: Web development, Mobile development, Legacy modernization, DevOps
+
+/* CONTACT */
+  Phone: +7 (912) 841 22 97
+  Email: info@octocode.tech
+  Website: https://octocode.tech
+  Address: 460507 Оренбургская область, п. Пригородный, ул. Парковая 13 п. 23
+
+/* THANKS */
+  Open source community
+  Google Fonts
+  Modern web standards

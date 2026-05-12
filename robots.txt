@@ -1,4 +1,60 @@
+# Robots.txt for octocode.tech
+# Last updated: 2026-05-12
+# Optimized for Yandex and Google
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 
+# Disallow specific paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+# Cache control directives for search engines
+# Prevent caching of dynamic content with query parameters
+Disallow: /*?*
+Disallow: /*?*
+
+# Allow specific file types
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://octocode.tech/sitemap.xml
+
+# Yandex specific directives
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Crawl-delay: 1
+Host: https://octocode.tech
+
+# Google specific directives
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Crawl-delay: 1
+
+# Googlebot-Image for image indexing
+User-agent: Googlebot-Image
+Allow: /
+
+# Googlebot-News (if applicable)
+User-agent: Googlebot-News
+Allow: /
