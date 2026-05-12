@@ -543,6 +543,37 @@ a:hover {
     margin-bottom: 3rem;
 }
 
+утере .footer-logo-container {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all var(--transition-normal);
+}
+
+.footer-logo-container:hover {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-color: rgba(99, 102, 241, 0.2);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.2));
+    transition: all var(--transition-normal);
+}
+
+.footer-logo-container:hover .footer-logo {
+    filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+    transform: scale(1.05);
+}
+
 .footer-section h4 {
     margin-bottom: 1.5rem;
     color: var(--text-primary);
