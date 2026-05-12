@@ -34,33 +34,7 @@
 
 <body>
 <!-- Header -->
-<header class="section md-padding">
-    <!-- Background Image -->
-    <div class="bg-img bg_1"
-         style="background-image: url('./img/background1.jpg')!important;">
-        <div class="overlay"></div>
-    </div>
-    <!-- /Background Image -->
-
-    <div class="home-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="home-content">
-                        <h2 class="white-text">
-                            <span style="color: white; margin: 0">ООО «ОКТОКОД»</span>
-						</h2>					
-							<span style="color: lightgray;">
-								Код, который живёт в проде
-							</span>
-											
-                    </div>
-                </div>
-            </div>		
-			
-        </div>
-    </div>
-</header>
+<div id="header-container"></div>
 <!-- /Header -->
 
 <div id="process" class="section md-padding">
@@ -159,46 +133,7 @@
 </div>
 
 <!-- Footer -->
-<footer id="footer" class="sm-padding bg-dark" style="padding-top: 20px;">
-    <div class="container">
-	
-		<div class="row">            
-            <div class="col-md-6 col-md-offset-3 col-xs-12">
-                <div class="contact text-center">
-                    <p class="phone">
-                        <a style="color: white" href="tel:+79128412297">+7 (912) 841 22 97</a>
-                    </p>					
-                    <a style="color: white" href="mailto:info@octocode.tech">info@octocode.tech</a>
-                </div>
-            </div>
-		</div>
-		
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="footer-follow">
-                    <p class="info-doc">
-                        <span>Общество с ограниченной ответственностью "ОКТОКОД"</span>
-                    </p>
-                    <p class="info-doc">
-                        Юридичесĸий адрес: 460507 Оренбургская область, п. Пригородный, ул. Парковая 13 п. 23
-                    </p>
-                    <p class="info-doc">
-                        ОКВЭД: 62.01 Разработка компьютерного программного обеспечения (1.01 по перечню Минцифры)
-                    </p>
-                    <p class="info-doc">
-                        ИНН: 5638080239
-                    </p>    
-					<p class="info-doc">
-                        КПП:  563801001
-                    </p>  					
-					<p class="info-doc">
-                        ОГРН: 1225600009304
-                    </p>  
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+<div id="footer-container"></div>
 <!-- /Footer -->
 
 <!-- Back to top -->
@@ -222,6 +157,23 @@
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<!-- Load Header and Footer -->
+<script>
+    // Load header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+        });
+    
+    // Load footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer-container').innerHTML = html;
+        });
+</script>
 
 </body>
 </html>

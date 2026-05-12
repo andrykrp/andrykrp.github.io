@@ -126,7 +126,7 @@ ul, ol {
 }
 
 .md-padding {
-    padding-top: 80px;
+    /*padding-top: 80px;*/
     padding-bottom: 80px;
 }
 
@@ -179,6 +179,7 @@ ul, ol {
 .section-header {
     position: relative;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 /*.section-header.small-margin {
@@ -205,6 +206,31 @@ ul, ol {
 
 .text-center .title:after {
     margin: 20px auto 0px;
+}
+
+/* Left align content for pages */
+#info .container,
+#prava .container,
+#about .container,
+#pricing-info .container,
+#project-types .container,
+#support .container,
+#factors .container,
+#technologies .container,
+#disclaimer .container {
+    text-align: left;
+}
+
+#info .section-header,
+#prava .section-header,
+#about .section-header,
+#pricing-info .section-header,
+#project-types .section-header,
+#support .section-header,
+#factors .section-header,
+#technologies .section-header,
+#disclaimer .section-header {
+    text-align: left;
 }
 
 /* --  Input  -- */
@@ -1981,4 +2007,77 @@ header {
 
 .img-works {
 
+}
+
+/*------------------------------------*\
+	Sticky Header
+\*------------------------------------*/
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.sticky-header .md-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar-center > li {
+    margin: 0;
+}
+
+.navbar-center > li > a {
+    padding: 5px 12px;
+    color: white !important;
+    font-weight: 400;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.navbar-center > li > a:hover {
+    color: #6195FF !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-center > li.active > a {
+    color: #6195FF !important;
+    background: rgba(97, 149, 255, 0.2);
+    font-weight: 500;
+}
+
+.navbar-center > li.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-center {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .navbar-center > li {
+        margin: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-center > li > a {
+        padding: 10px 15px;
+        color: white !important;
+        font-size: 13px;
+    }
+    
+    .navbar-center > li.active > a {
+        background: rgba(97, 149, 255, 0.3);
+        border-left: 3px solid #6195FF;
+    }
 }

@@ -108,4 +108,21 @@
 		}
 	});
 
+	///////////////////////////
+	// Hide current page from menu
+	$(document).ready(function() {
+		var currentPage = window.location.pathname.split('/').pop();
+		if (currentPage === '') {
+			currentPage = 'index.html';
+		}
+		
+		$('.navbar-center > li').each(function() {
+			var link = $(this).find('a');
+			var href = link.attr('href');
+			if (href === currentPage) {
+				$(this).addClass('hidden');
+			}
+		});
+	});
+
 })(jQuery);
