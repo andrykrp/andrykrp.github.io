@@ -10,6 +10,8 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
+Disallow: /.docs/
+Disallow: /presentation.html
 Disallow: /*.log$
 Disallow: /*.tmp$
 
